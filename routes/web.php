@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+if (env('APP_ENV') === 'production') {
+    URL::forceScheme('https');
+}
+
+Route::get('/', 'CostscoreController@index');
+Route::get('costscore/getcostscore', 'CostscoreController@getcostscore');
