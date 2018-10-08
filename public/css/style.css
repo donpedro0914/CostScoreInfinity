@@ -395,7 +395,7 @@ ul.form-steps {
 }
 .form-steps li {
     float: left;
-    width: 16.66%;
+    width: 20%;
     list-style: none;
     text-align: center;
     padding: 20px;
@@ -412,122 +412,180 @@ ul.form-steps {
     padding: 20px;
     background: #16a085;
 }
-#c1 {
+
+#c1, #c2, #c3, #c4 {
     text-align: center;
 }
-#c1 label > input {
+#c1 label, #c2 label, #c3 label, #c4 label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#c1 label > input, #c2 label > input, #c3 label > input, #c4 label > input {
     visibility: hidden;
 }
-#c1 label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#c1 label > input + span {
+#c1 label > input + img, #c2 label > input + img, #c3 label > input + img, #c4 label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
 }
-#c3 {
+#c2 .col-lg-2 {
+    min-height: 265px;
+}
+
+#house {
     text-align: center;
 }
-#c3 label > input {
+#house label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#house label > input {
     visibility: hidden;
 }
-#c3 label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#c3 label > input + span {
+#house label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
 }
-#c4 {
+
+#bungalow {
     text-align: center;
 }
-#c4 label > input {
+#bungalow label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#bungalow label > input {
     visibility: hidden;
 }
-#c4 label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#c4 label > input + span {
+#bungalow label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
 }
-#c5 {
+
+#Det {
     text-align: center;
 }
-#c5 label > input {
+#Det label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#Det label > input {
     visibility: hidden;
 }
-#c5 label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#c5 label > input + span {
+#Det label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
 }
-#c6 {
+
+#Semi {
     text-align: center;
 }
-#c6 label > input {
+#Semi label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#Semi label > input {
     visibility: hidden;
 }
-#c6 label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#c6 label > input + span {
+#Semi label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
 }
-#f1 {
+
+#End-terrace {
     text-align: center;
 }
-#f1 label > input {
+#End-terrace label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#End-terrace label > input {
     visibility: hidden;
 }
-#f1 label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#f1 label > input + span {
+#End-terrace label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
 }
-#mc_cwi {
+
+#Mid-terrace {
     text-align: center;
 }
-#mc_cwi label > input {
+#Mid-terrace label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#Mid-terrace label > input {
     visibility: hidden;
 }
-#mc_cwi label > input + span:hover {
-    background: #16a085;
-    color: #fff;
-    border:2px solid #16a085;
-}
-#mc_cwi label > input + span {
+#Mid-terrace label > input + img {
     cursor: pointer;
-    border:2px solid #ccc;
     padding: 20px;
     display: block;
+}
+
+#flat, #maisonette, #flat_rooms, #maisonette_rooms, #bung_det , #bung_gen, #park {
+    text-align: center;
+}
+#flat label, #maisonette label, #flat_rooms label, #maisonette_rooms label, #bung_det label, #bung_gen label, #park label {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+#flat label > input, #maisonette label > input, #flat_rooms label > input, #maisonette_rooms label > input, #bung_det label > input, #bung_gen label > input, #park label > input {
+    visibility: hidden;
+}
+#flat label > input + img, #maisonette label > input + img, #flat_rooms label > input + img, #maisonette_rooms label > input + img, #bung_det label > input + img, #bung_gen label > input + img, #park label > input + img {
+    cursor: pointer;
+    padding: 20px;
+    display: block;
+    width: 100%;
+}
+
+#filter_container .col-lg-3 {
+    margin-bottom: 150px;
+}
+
+#fl1 label > img, #fl2 label > img, #fl3 label > img, #fl4 label > img, #fl5 label > img {
+}
+#fl1 label > span, #fl2 label > span, #fl3 label > span, #fl4 label > span, #fl5 label > span {
+    display: block;
+    margin-top: 10px;
+}
+#fl1, #fl2, #fl3, #fl4, #fl5 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    height: 100%;
 }

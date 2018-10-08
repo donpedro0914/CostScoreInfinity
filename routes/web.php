@@ -16,4 +16,4 @@ if (env('APP_ENV') === 'production') {
 }
 
 Route::get('/', 'CostscoreController@index');
-Route::get('costscore/getcostscore', 'CostscoreController@getcostscore');
+Route::post('costscore/getcostscore', 'CostscoreController@getcostscore')->name('costscore.getcostscore');

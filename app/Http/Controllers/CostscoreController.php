@@ -18,9 +18,9 @@ class CostscoreController extends Controller
     }
 
     public function getcostscore(Request $request) {
-        $costscore = Costscore::where('measure_category', request('measure_category'))->where('measure_type', request('measure_type'))->where('property_type', request('property_type'))->where('pre_main_heating_source_for_the_property', request('pre_main_heating_source_for_the_property'))->where('post_main_heating_source_for_the_property', request('post_main_heating_source_for_the_property'))->where('name_of_uplift', request('name_of_uplift'))->first();
+        $costscore = Costscore::where('measure_category', $request->input('cm'))->where('measure_type', $request->input('mt'))->where('property_type', $request->input('pt'))->where('pre_main_heating_source_for_the_property', $request->input('pmh'))->where('post_main_heating_source_for_the_property', $request->input('pmh2'))->get();
 
-        return response()->json($costscore);
+        return view('result', compact('costscore'));
     }
 
     /**
